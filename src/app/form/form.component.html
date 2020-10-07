@@ -1,0 +1,21 @@
+<mat-card>
+    <form (submit)="addUserDetails(userForm)" #userForm="ngForm">
+
+        <mat-form-field appearance="legacy">
+            <label> User Name </label>
+            <input matInput type="text" required name="name" ngModel>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <label> Email Address </label>
+            <input matInput type="email" required name="email" ngModel>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <label> Password </label>
+            <input matInput type="password" required name="password" ngModel>
+        </mat-form-field>
+
+        <button type="submit" mat-button> Add User </button>
+    </form>
+</mat-card>
